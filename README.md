@@ -24,4 +24,18 @@ The derivative of ( x^x ) involves the product of two terms.
 
 ![Screenshot 2024-03-24](https://github.com/Siddhi-agg/OCaml-Challenge/assets/101979598/56d2dbdb-86bc-4e6c-ae42-fa07767189f6)
 
- 
+## Unit Testing through OUnit
+[This OCaml code](https://github.com/Siddhi-agg/OCaml-Challenge/blob/main/tests.ml) showcases unit testing using the OUnit framework for the symbolic differentiation function `d`. The tests are categorized into four main cases:
+
+1. **`test_d_basic`**: It covers basic scenarios like the derivative of a constant, the derivative of a variable, and the derivative of a sum of variables.
+  
+2. **`test_d_power`**: This case focuses on testing differentiation of power expressions, including \( x^2 \) and \( x^x \).
+
+3. **`test_d_trigonometric`**: It verifies the differentiation of trigonometric functions, specifically sine and cosine.
+
+4. **`test_d_logarithmic`**: It verifies the differentiation of logarithmic functions, including ln \( x \) and ln \( x^x \)..
+
+
+Each test case compares the computed result with the expected result using `assert_equal`.
+
+Finally, all test cases are assembled into a test suite called `"suite"` and executed using `run_test_tt`. This setup ensures thorough testing of the symbolic differentiation function across various scenarios.
