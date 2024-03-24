@@ -1,5 +1,5 @@
 # Short & interesting OCaml code
-This OCaml code defines a function d for symbolic differentiation, capable of computing the derivative of various mathematical expressions represented as an algebraic data type. The function takes two arguments: x, the variable with respect to which differentiation is performed, and the expression to be differentiated.
+[This OCaml code](https://github.com/Siddhi-agg/OCaml-Challenge/blob/main/main.ml) defines a function d for symbolic differentiation, capable of computing the derivative of various mathematical expressions represented as an algebraic data type. The function takes two arguments: x, the variable with respect to which differentiation is performed, and the expression to be differentiated.
 
 The expressions supported include integers (Int), variables (Var), addition (Add), multiplication (Mul), exponentiation (Pow), natural logarithm (Ln), sine (Sin), and cosine (Cos). The code implements the rules of differentiation for each expression type recursively.
 For example, differentiation of an addition (Add) involves differentiating each operand separately and summing the results. Similarly, differentiation of multiplication (Mul) employs the product rule, while differentiation of exponentiation (Pow) utilizes the chain rule.
